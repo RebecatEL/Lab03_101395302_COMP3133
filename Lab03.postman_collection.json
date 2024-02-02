@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "b564100e-9d82-44b9-a6be-1edda1cd80fd",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29842619"
+	},
+	"item": [
+		{
+			"name": "Get all resturants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants sort by ASC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants?sortBy=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants sort by DESC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants?sortBy=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants by cuisine (Japanese)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants/cuisine/Japanese",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants",
+						"cuisine",
+						"Japanese"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants by cuisine (Bakery)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants/cuisine/Bakery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants",
+						"cuisine",
+						"Bakery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants by cuisine (Italian)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants/cuisine/Italian",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants",
+						"cuisine",
+						"Italian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all restaurants with cuisines = Delicatessen and city != Brooklyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/restaurants/Delicatessen",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"restaurants",
+						"Delicatessen"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
